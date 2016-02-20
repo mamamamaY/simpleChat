@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * `syncAssets`
  *
@@ -17,4 +18,13 @@ module.exports = function(grunt) {
     'sync:dev',
     'coffee:dev'
   ]);
+=======
+module.exports = function (grunt) {
+	grunt.registerTask('syncAssets', [
+		'jst:dev',
+		'less:dev',
+		'sync:dev',
+		'coffee:dev'
+	]);
+>>>>>>> chat
 };

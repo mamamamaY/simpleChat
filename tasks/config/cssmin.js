@@ -3,6 +3,7 @@
  *
  * ---------------------------------------------------------------
  *
+<<<<<<< HEAD
  * Minify the intermediate concatenated CSS stylesheet which was
  * prepared by the `concat` task at `.tmp/public/concat/production.css`.
  *
@@ -24,4 +25,21 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+=======
+ * Minifies css files and places them into .tmp/public/min directory.
+ *
+ * For usage docs see:
+ * 		https://github.com/gruntjs/grunt-contrib-cssmin
+ */
+module.exports = function(grunt) {
+
+	grunt.config.set('cssmin', {
+		dist: {
+			src: ['.tmp/public/concat/production.css'],
+			dest: '.tmp/public/min/production.min.css'
+		}
+	});
+
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
+>>>>>>> chat
 };

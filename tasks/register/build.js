@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * `build`
  *
@@ -24,4 +25,13 @@ module.exports = function(grunt) {
     'clean:build',
     'copy:build'
   ]);
+=======
+module.exports = function (grunt) {
+	grunt.registerTask('build', [
+		'compileAssets',
+		'linkAssetsBuild',
+		'clean:build',
+		'copy:build'
+	]);
+>>>>>>> chat
 };
